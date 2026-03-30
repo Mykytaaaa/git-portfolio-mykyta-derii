@@ -2,6 +2,8 @@
 
 ### Project description
 
+The project implements a console-based calculator for integer operations. If you run the project, you will see the detailed usage instructions.
+
 Running: mvn package, then run the jar
 
 This Git repo demonstrates the use of feature branches, fast-forward merges, three-way merge, and conflict resolution.
