@@ -12,6 +12,10 @@ public class Calculator {
                 return operation.getA() + operation.getB();
             case "-":
                 return operation.getA() - operation.getB();
+            case "*":
+                return operation.getA() * operation.getB();
+            case "/":
+                return operation.getA() / operation.getB();
             default:
                 throw new InvalidOperationException();
         }
