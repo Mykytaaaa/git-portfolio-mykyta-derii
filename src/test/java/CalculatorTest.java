@@ -34,5 +34,12 @@ public class CalculatorTest {
         var calculator = new Calculator();
         var op = new Operation("9 / 4");
         assertEquals(calculator.Calculate(op), 2);
+	}
+	
+	@Test
+    public void calculator_5_mod_2_returns_minus_1() throws InvalidArgumentException, InvalidOperationException {
+        var calculator = new Calculator();
+        var op = new Operation("5 % 2");
+        assertEquals(calculator.Calculate(op), 1);
     }
 }
