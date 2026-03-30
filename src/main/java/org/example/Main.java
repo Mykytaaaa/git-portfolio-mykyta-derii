@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.Exceptions.DivisionByZeroException;
 import org.example.Exceptions.InvalidArgumentException;
 import org.example.Exceptions.InvalidOperationException;
 
@@ -32,6 +33,9 @@ public class Main {
                 result = calculator.Calculate(operation);
             } catch (InvalidOperationException ex) {
                 System.out.println("Unsupported operation");
+                continue;
+            } catch (DivisionByZeroException ex) {
+                System.out.println("Cannot divide by zero");
                 continue;
             }
 
