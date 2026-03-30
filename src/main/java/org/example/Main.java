@@ -10,6 +10,9 @@ public class Main {
         Scanner in = new Scanner(System.in);
         Calculator calculator = new Calculator();
 
+        System.out.println("Hi! With this program, you can calculate integers by typing operations in format: 2 * 5.");
+        System.out.println("The supported operations are: +, -, *, /, %.");
+
         while (true) {
             String input = in.nextLine();
 
