@@ -13,6 +13,9 @@ public class Main {
         while (true) {
             String input = in.nextLine();
 
+            if (input.equals("exit"))
+                return;
+
             Operation operation;
             try {
                 operation = new Operation(input);
